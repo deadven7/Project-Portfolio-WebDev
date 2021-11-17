@@ -1,0 +1,346 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans';
+    min-height: 200vh;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.slideanim {
+    visibility:hidden;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+.logo {
+    height: 100px; 
+    width: 100px;
+}
+.logo:hover {
+    height: 110px; 
+    width: 110px;
+    transition: height 0.2s, width 0.2s;
+}
+.navbar {
+    border: 0;
+    line-height: 1.42857143;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: 'Krona One';
+    background-color: transparent;
+}
+.navbar-default {
+    transition:500ms ease;
+    background:transparent;
+}
+.navbar-default.scrolled {
+    background-color: #ffffff;
+    box-shadow: 5px 0px 20px rgba(0,0,0, .2);
+}
+.navbar li .nav-link, .navbar .navbar-brand {
+    font-size: 14px; 
+    font-family: 'Krona One'; 
+    color: #000000 !important;
+}
+.navbar-nav li .nav-link:hover, .navbar-nav li.active .nav-link {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 200;
+    transition: color 0.2s, font-size 0.2s, font-weight 0.2s;
+}
+.ph-nav {
+    display: none;
+    margin-left: 50px;
+}
+.bg {
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("contents/images/proj-back.png");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.projects {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 5px; 
+    box-shadow: 0px 12px 18px 2px rgba(0,0,0,0.36); 
+    position: relative;
+}
+.projbox {
+    padding-left: 7%;
+}
+.maintitle {
+    font-family: 'Krona One';
+    font-size: 27px;
+}
+.maindiv {
+    background-color: #000000; 
+    border: #000000; 
+    border-radius: 2px;
+    max-width: 30%; 
+    margin: 0px; 
+    margin-top: 25px;
+}
+.projecttext {
+    font-size: 27px; 
+    font-family: 'Century Gothic';
+}
+.projtitle {
+    font-size: 40px; 
+    font-family: 'Krona One';
+}
+.projtitle:hover .maindiv {
+    max-width: 65px !important;
+    transition: max-width 0.5s; 
+}
+.social-logo {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+}
+.social-logo:hover {
+    height: 80px;
+    width: 80px;
+    transition: height 0.2s, width 0.2s;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.aura {
+    background: linear-gradient(to bottom, #ff8547 0%, #ffffff 80%);
+}
+.kaiser {
+    background: linear-gradient(to bottom, #88dd77 0%, #ffffff 80%);
+}
+.aurapacks {
+    margin: 20px;
+    border-radius: 10px; 
+    text-align: center; 
+    width: 600px; 
+    height: 400px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.08));
+}
+.kaiserph {
+    margin: 20px; 
+    border-radius: 10px; 
+    text-align: center; 
+    width: 600px; 
+    height: 400px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.08));
+}
+.auradiv {
+    background-color: #AA4A12; 
+    border: #AA4A12; 
+    border-radius: 2px; 
+    height: 4px;  
+    width: 40%;
+    margin-top: 30px;
+}
+.kaiserdiv {
+    background-color: #006400; 
+    border: #006400; 
+    border-radius: 2px; 
+    height: 4px;   
+    width: 40%;  
+    margin-top: 30px;
+}
+.webtitle {
+    margin-top: 50px;
+    font-size: 32px; 
+    font-family: 'Montserrat', 'Lato';
+    letter-spacing: 1px;
+}
+.webtext {
+    font-size: 22px; 
+    font-family: 'Montserrat', 'Lato'; 
+    color: #000000; 
+    padding: 0% 20%;
+}
+.dsproj {
+    background-color: #89CFF0;
+}
+.kaggle-header {
+    font-size: 35px; 
+    font-family: 'Montserrat'; 
+    font-weight: 800; 
+    color: #ffffff;
+}
+.kaggle-div {
+    background-color: #ffffff; 
+    color: #ffffff; 
+    width: 30%; 
+    margin-top: 30px;
+}
+.datas {
+    padding: 20px;
+}
+.ds {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+.ds:hover {
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    transition: box-shadow 0.2s;
+}
+.othercard {
+    padding: 20px;
+}
+.otherproj {
+    background-color: #4CAF50;
+}
+.other {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+.other:hover {
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    transition: box-shadow 0.2s;
+}
+.card-title {
+    font-family: 'Lato';
+    font-size: 25px;
+}
+.card-text {
+    color: #000000;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+.ft {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+.ft:hover {
+    width: 60px;
+    height: 60px;
+    transition: height 0.2s, width 0.2s;
+}
+@media (max-width: 1400px) {
+    .bg {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(0, 0, 0, 1)), url("contents/images/projph-back.png") !important;
+    }
+    .keyinfo {
+        display: none;
+    }
+    .footlink {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .logo-mobile {
+        display: block;
+    }
+    .navbar-default{
+        background:#FFFFFF;
+    }
+    .ph-nav {
+        display: block;
+        font-family: 'Cinzel' !important;
+        font-size: 24px !important;
+    }
+    .ph-link {
+        padding-left: 30px;
+    }
+    .ind-link {
+        padding-top: 10px;
+    }
+    .bg {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(0, 0, 0, 1)), url("contents/images/projph-back.png") !important;
+    }
+    .projects {
+        margin-bottom: 30%;
+    }
+    .aura {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, 1)), url("contents/images/auraph-back.png") !important;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .kaiser {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, 1)), url("contents/images/kaiserph-back.png") !important;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .webtitle {
+        margin-top: 0px !important;
+        font-weight: 800 !important;
+    }
+    .webtext {
+        padding: 0% 5% !important;
+        font-weight: 600 !important;
+        letter-spacing: .7px;
+    }
+    .card-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+    .skills {
+        display: none;
+    }
+    .aurapacks {
+        display: none;
+    }
+    .kaiserph {
+        display: none;
+    }
+    .kaggle-div {
+        width: 70%;
+    }
+    .keyinfo {
+        display: none;
+    }
+    .footlink {
+        display: none;
+    }
+}
